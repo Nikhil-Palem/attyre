@@ -5,6 +5,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/",(req,res)=>{
+  res.send("server is running...");
+})
+
 app.post('/api/color', (req, res) => {
   const { skinColor, eyeColor, hairColor, undertone, preferences } = req.body;
 
