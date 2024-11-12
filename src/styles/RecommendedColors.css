@@ -1,0 +1,57 @@
+.recommended-colors {
+  margin-top: 20px;
+}
+
+.recommended-colors h3 {
+  font-size: 1.2em;
+  color: #228B22;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.color-swatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  justify-content: flex-start;
+} 
+.color-info .color-name{
+  font-weight: bolder;
+}
+.color-info .color-description{
+  font-size: 10px;
+  color: gray;
+}
+.color-info .color-usage{
+  font-size: small;
+}
+.color-swatch {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.info p{
+  color: black;
+}
+.color-info {
+  text-align: start;
+}
+
+.color-name,
+.color-usage,
+.color-description {
+  margin: 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.color-description {
+  font-size: 0.8em;
+  color: #777;
+}

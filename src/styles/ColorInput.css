@@ -1,0 +1,31 @@
+.color-input-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .color-input-form label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .color-input-form input {
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+  }
+  
+  .color-input-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #228B22;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; */
+    margin-left: 10px;
+  }
+  
