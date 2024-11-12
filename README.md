@@ -1,43 +1,43 @@
-### Setup Instructions
+# Setup Instructions
 Follow these steps to set up the project locally:
 
-# Clone the repository:
+## Clone the repository:
 
 bash
 Copy code
 git clone <repository-url>
 cd color-palette-recommendation-tool
-# Install dependencies:
+### Install dependencies:
 
 Backend:
 bash
 Copy code
 npm install
-# Frontend: Navigate to the frontend directory (if separate) and install frontend dependencies:
+### Frontend: Navigate to the frontend directory (if separate) and install frontend dependencies:
 bash
 Copy code
 cd frontend
 npm install
-# Run the Project:
+### Run the Project:
 
-# Backend: Start the backend server
+### Backend: Start the backend server
 bash
 Copy code
 node app.js
-# Frontend: Start the frontend
+### Frontend: Start the frontend
 bash
 Copy code
 cd frontend
 npm start
 ## Libraries and Frameworks Used
-# Backend:
+### Backend:
 Node.js and Express.js: To create a RESTful API that serves color palette recommendations.
 CORS: To enable secure API access for the frontend.
-# Frontend:
+### Frontend:
 React.js: To create an interactive and responsive user interface.
 CSS (Vanilla): Each component has its own CSS file, maintaining clean and modular styles without external CSS frameworks like Bootstrap or Tailwind.
 Design Decisions
-# API Structure:
+### API Structure:
 
 The /api/color endpoint returns color data, including recommended_colors and colors_to_avoid. Each color includes metadata such as hex code and description for frontend display.
 Component-Based Styling:
