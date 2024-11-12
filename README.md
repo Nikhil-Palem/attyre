@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+### Setup Instructions
+Follow these steps to set up the project locally:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Clone the repository:
 
-## Available Scripts
+bash
+Copy code
+git clone <repository-url>
+cd color-palette-recommendation-tool
+# Install dependencies:
 
-In the project directory, you can run:
+Backend:
+bash
+Copy code
+npm install
+# Frontend: Navigate to the frontend directory (if separate) and install frontend dependencies:
+bash
+Copy code
+cd frontend
+npm install
+# Run the Project:
 
-### `npm start`
+# Backend: Start the backend server
+bash
+Copy code
+node app.js
+# Frontend: Start the frontend
+bash
+Copy code
+cd frontend
+npm start
+## Libraries and Frameworks Used
+# Backend:
+Node.js and Express.js: To create a RESTful API that serves color palette recommendations.
+CORS: To enable secure API access for the frontend.
+# Frontend:
+React.js: To create an interactive and responsive user interface.
+CSS (Vanilla): Each component has its own CSS file, maintaining clean and modular styles without external CSS frameworks like Bootstrap or Tailwind.
+Design Decisions
+# API Structure:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The /api/color endpoint returns color data, including recommended_colors and colors_to_avoid. Each color includes metadata such as hex code and description for frontend display.
+Component-Based Styling:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project uses separate CSS files for each component, allowing for easier updates and modular design adjustments.
+## User Interface for Color Selection:
 
-### `npm test`
+Users can enter their attributes (skin tone, eye color, etc.) through form inputs. This information is then used by the backend to generate a suitable color palette.
+Assumptions
+Mock Data for Color Analysis:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Currently, the backend returns mock data for the color recommendations. For production, this could be replaced with a real machine-learning model or an API integration that uses color science.
+Stand-Alone Server:
 
-### `npm run build`
+The backend runs independently and provides data to the frontend via API requests.
+CSS-Only Design:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The UI design does not rely on CSS frameworks, opting instead for vanilla CSS to maintain simplicity and flexibility.
+Project Features
+Customizable Color Recommendations: Generates a unique color palette based on user characteristics.
+Responsive UI: Optimized for mobile and desktop, ensuring smooth user experience across devices.
+Image Upload & Color Picker: Allows users to upload an image and select colors via a dropper tool, enhancing the accuracy of the color recommendations.
+Recommended & Avoid Colors: Displays two distinct color categories, helping users make informed color choices.
+Future Improvements
+Enhanced Recommendation Engine: Replace mock data with real-world color analysis algorithms or machine learning for more accurate recommendations.
+Database Integration: Store user data and preferences for a more personalized experience.
+Advanced Filters: Add more specific color attributes like warmth/coolness and seasonality.
