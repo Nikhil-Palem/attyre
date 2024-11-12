@@ -21,6 +21,7 @@
 .uploaded-image {
   /* max-width: 10%; */
   height: auto;
+  width: 150px;
   margin-top: 20px;
 }
 
