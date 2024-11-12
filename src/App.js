@@ -7,7 +7,7 @@ function App() {
   const [result, setResult] = useState(null);
 
   const handleFormSubmit = async (data) => {
-    const response = await fetch('http://localhost:5000/api/color', {
+    const response = await fetch('https://attyre-xtbx.vercel.app/api/color', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
